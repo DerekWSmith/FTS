@@ -1,0 +1,39 @@
+.post-type-project .acf-tab-wrap.-top {
+    background: rgb(255 255 255);
+    margin-bottom: 10px;
+}
+
+.post-type-project .acf-fields > .acf-tab-wrap .acf-tab-group {
+    border-top: none;
+}
+
+.post-type-project .acf-tab-wrap.-top ul {
+    padding: 0;
+    border-bottom: 0;
+}
+
+.post-type-project .acf-tab-group li {
+    margin-right: 2rem;
+}
+
+.post-type-project .acf-fields > .acf-tab-wrap .acf-tab-group li a {
+    padding-left: 0;
+    padding-right: 0;
+    border-width: 0 0 2px 0;
+    background: rgb(0 0 0 / 0%);
+    color: rgb(88 88 88);
+}
+
+.post-type-project .acf-fields > .acf-tab-wrap .acf-tab-group li.active a {
+    border-style: solid;
+    border-color: #4b90cf;
+}
+
+.order_notes {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.acf-fields .acf-field[data-name="project_manger"] {
+    padding: 0;
+}

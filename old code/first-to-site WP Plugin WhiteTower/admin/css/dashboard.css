@@ -1,0 +1,372 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+body {
+    line-height: 1.4em;
+}
+  
+html.wp-toolbar {
+    padding-top: 40px;
+}
+
+#tinymce {
+    background: rgb(255 255 255);
+}
+
+#wpadminbar *, body {
+    font-family: 'Montserrat';
+}
+
+#wpadminbar,
+#wpadminbar a.ab-item,
+#wpadminbar .ab-label {
+    height: 40px;
+}
+
+#wpadminbar .ab-label {
+    font-weight: 600;
+
+}
+
+#wpadminbar .ab-icon, #wpadminbar .ab-item:before, #wpadminbar>#wp-toolbar>#wp-admin-bar-root-default .ab-icon, .wp-admin-bar-arrow {
+    padding: 0px 0;
+}
+
+#adminmenu li.wp-menu-separator {
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.wp-admin #wpadminbar #wp-admin-bar-hero-title a.ab-item ,
+#wpadminbar .ab-label,
+#wpadminbar .quicklinks a {
+    display: flex;
+    align-items: center;
+}
+
+/* Add Title field */
+#titlediv #title {
+    border-radius: 10px !important;
+    padding: 0.75rem 1rem !important;
+    font-size: 14px;
+    line-height: 1.4;
+    height: auto;
+}
+
+/* Add post button */
+.wrap .page-title-action,
+.wrap .page-title-action:active {
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+    transition-duration: 150ms;
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    font-weight: 600;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    --tw-bg-opacity: 0.8;
+    --tw-bg-opacity: 1;
+    background-color: rgba(0,0,0,var(--tw-bg-opacity));
+    border-radius: 0.5rem;
+}
+
+.wrap .page-title-action:active,
+.wrap .page-title-action:hover {
+    --tw-text-opacity: 1;
+    --tw-bg-opacity: 0.75;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+}
+
+/* Table item */
+.wp-list-table.widefat.fixed {
+    position: static;
+}
+
+img {
+    border-style:none;
+}
+
+/* Notice fix */
+.notice.inline:not(.hidden) {
+    display: inline-block;
+}
+
+/* Adminbar avatar image */
+#wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
+    border-radius: 50%;
+}
+
+.wp-menu-name {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#adminmenu div.wp-menu-image {
+    width: 45px;
+}
+
+.dashicons-before:before {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+}
+#adminmenu div.wp-menu-image.svg {
+    background-size: 15px;
+}
+
+#toplevel_page_WFLS .wp-menu-image img,
+#toplevel_page_Wordfence .wp-menu-image img {
+    max-height: unset !important;
+}
+
+#adminmenu div.wp-menu-name {
+    padding-left: 45px;
+}
+
+/* dashboard sidebar */
+body:not(.folded) #adminmenu li a {
+    display: inline-block;
+    width: 100%;
+    height: 100% !important;
+}
+
+/* dsah icon in dashboard sidebar */
+.wp-menu-image.dashicons-before img {
+    display: inline;
+}
+
+#wp-admin-bar-wp-logo a.ab-item {
+    display: none;
+}
+
+.wp-admin #wpadminbar #wp-admin-bar-hero-title {
+    min-width: 160px;
+}
+
+.wp-admin #wpadminbar #wp-admin-bar-hero-title a.ab-item {
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.acf-postbox {
+    box-shadow: unset;
+}
+
+.acf-postbox, .acf-fields, .acf-fields.-border, .acf-field {
+    border: 0 !important;
+}
+
+.acf-postbox .postbox-header {
+    display: none;
+}
+
+.acf-fields > .acf-field.acf-field-61f72d2412a57,
+.acf-fields > .acf-field.acf-field-61dcd1b8134d2, /* project message */
+.acf-fields > .acf-field.acf-field-619f12d641a7f, /* project summary */
+.acf-field.acf-field-group {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#wpadminbar #wp-admin-bar-add-project .ab-icon:before {
+    content: "\f132";
+}
+
+body .wp-heading-inline {
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+.acf-fields {
+    margin: 0 -12px !important;
+}
+
+.acf-label {
+    margin-bottom: 0 !important;
+}
+.project-summary-title,
+.acf-field.acf-field-group > .acf-label label {
+    font-size: 1.2rem !important;
+    font-family: 'Montserrat' !important;
+    color: rgb(75 144 207);
+    border-bottom: 2px solid rgb(75 144 207);
+    padding-bottom: 0.5rem;
+}
+
+.project-summary-title {
+    color: #000;
+    border-bottom-color: #000;
+    font-weight: 600;
+}
+
+.acf-field.acf-field-group .acf-label label {
+    font-weight: 600;
+}
+
+label#title-prompt-text {
+    padding: 0.75rem 1rem !important;
+}
+
+.acf-input input[type=color], .acf-input input[type=date], .acf-input input[type=datetime-local], 
+.acf-input input[type=datetime], .acf-input input[type=email], .acf-input input[type=month], 
+.acf-input input[type=number], .acf-input input[type=password], .acf-input input[type=search], 
+.acf-input input[type=tel], .acf-input input[type=text], .acf-input input[type=time], .acf-input input[type=url], 
+.acf-input input[type=week], .acf-input select, .acf-input textarea {
+    border-radius: 10px !important;
+    padding: 0.75rem 1rem !important;
+}
+
+.acf-field.acf-accordion .acf-label.acf-accordion-title {
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 2px  solid rgb(221 221 221);
+}
+
+.acf-accordion .acf-accordion-title label {
+    font-size: 14px;
+    font-weight: 600;
+}
+.tablenav .actions select {
+    padding: 0 24px 0 8px !important;
+    font-size: 12px;
+    border-radius: 5px !important;
+}
+
+#posts-filter input {
+    /* padding: 0 8px !important; */
+}
+
+.acf-input #save-post {
+    float: none;
+}
+
+.post-new-php .acf-field-619f12d641a7f, 
+.post-new-php .acf-field-619f120ac4ab3 {
+    display: none;
+}
+
+
+/* Email */
+.post-type-email #post-body-content {
+    display: none;
+}
+
+
+.select2-container.-acf .select2-selection {
+    padding: 12px 16px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 0;
+    position: relative;
+    font-size: 14px;
+}
+
+body .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100%;
+}
+
+.acf-input select[readonly="readonly"] {
+    pointer-events: none;
+}
+
+.acf-input select[readonly="readonly"],
+.wp-core-ui select:disabled[readonly="readonly"] {
+    background: rgb(0 0 0 / 0%);
+    border: 0;
+    padding: 0 !important;
+    color: rgb(0 0 0);
+    opacity: 1;
+}
+
+.clear_note, .add_note {
+    margin-top: 45px;
+}
+
+/* accordion Email for project post type */
+.acf-fields > .acf-field.acf-field-61f72d2412a57 {
+    padding-top: 0;
+}
+
+#accordionEmail .accordion-header {
+    border-bottom: 2px  solid rgb(221 221 221);
+}
+
+#accordionEmail h2.accordion-header {
+    padding: 0;
+}
+
+#accordionEmail .accordion-header button {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(60 67 74);
+    padding: 12px 0 ;
+}
+
+#accordionEmail .accordion-header button:hover {
+    background: rgb(243 244 245);
+}
+
+.acf-field-accordion.-open .dashicons:before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232563eb'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z'/%3E%3C/svg%3E");
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    content: '';
+    display: block;
+    height: 1.25rem;
+    width: 1.25rem;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+}
+
+.acf-field-accordion .dashicons:before {
+    display: block;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+}
+
+@media only screen and (max-width: 782px){
+    html.wp-toolbar {
+        padding-top: 0px;
+    }
+
+    #wp-toolbar>ul>li#wp-admin-bar-add-project {
+        display: block;
+    }
+    #wpadminbar li .ab-icon {
+        
+        font-size: 26px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #wpadminbar #wp-admin-bar-my-account a.ab-item {
+        color: transparent;
+    }
+}
